@@ -1,0 +1,17 @@
+CEO vs The World
+
+Core Game Design
+Player Experience: Strategic Thinking
+Core Mechanic: Place Defenders to Stop Attackers
+Theme: Urban
+Core game loop: Kill all attackers to progress to next level
+
+* Background setting
+* (2) Defenders Sprite Sheets
+  - Idle Animation
+  - Attack Animation
+* (2) Attackers Sprite Sheets
+  - Idle Animation
+  - Attack Animation
+  - Jump Animation
+  
