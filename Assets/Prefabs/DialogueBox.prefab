@@ -107,6 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8a2c831b07f29a49ac0320d2cec9cb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_startDelay: 1.5
   m_typingDelay: 0.2
   m_linesDelay: 0.4
   m_changeSpeakerLine: 4
