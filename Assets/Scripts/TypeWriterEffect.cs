@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class TypeWriterEffect : MonoBehaviour
 {
     [Header("Timing")]
+    [SerializeField] private float m_startDelay = 1.5f;
     [SerializeField] private float m_typingDelay = 0.2f;
     [SerializeField] private float m_linesDelay = 0.4f;
     [SerializeField] private int m_changeSpeakerLine = 4;
@@ -32,7 +33,7 @@ public class TypeWriterEffect : MonoBehaviour
         m_currentSpeaker = GetComponentInChildren<Image>();
         m_dialogueBox = GetComponentInParent<Image>();
 
-        StartCoroutine(ShowText());
+        StartCoroutine(StartAfterDelay());
     }
 
     private void Update()
@@ -44,6 +45,13 @@ public class TypeWriterEffect : MonoBehaviour
                 m_textIndex = m_textLines[m_currentLine].Length - 3;
             }
         }
+    }
+
+    private IEnumerator StartAfterDelay()
+    {
+        yield return new WaitForSeconds(m_startDelay);
+
+        StartCoroutine(ShowText());
     }
 
     private IEnumerator ShowText()
