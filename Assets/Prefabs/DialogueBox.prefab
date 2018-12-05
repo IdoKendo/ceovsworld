@@ -95,7 +95,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Hello world!
+  m_Text: HELLO WORLD
 --- !u!114 &114216783311995038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -109,9 +109,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_typingDelay: 0.2
   m_linesDelay: 0.4
+  m_changeSpeakerLine: 4
   m_textLines: []
   m_speakers: []
-  m_changeSpeakerLine: 4
+  m_typingSound: {fileID: 8300000, guid: d28e7b83eb4344c44aa922dcc54d0272, type: 3}
+  m_typingVolume: 0.35
+  m_changeSpeakersSound: {fileID: 0}
+  m_changeSpeakersVolume: 0.5
 --- !u!114 &114477179001809246
 MonoBehaviour:
   m_ObjectHideFlags: 1

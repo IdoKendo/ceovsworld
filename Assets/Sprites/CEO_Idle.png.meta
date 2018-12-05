@@ -1,9 +1,13 @@
 fileFormatVersion: 2
-guid: cf13b23bcde1a7c48bda8371b3bbc42d
+guid: 40949fcb76b31e647b6300e180c8faff
 TextureImporter:
   fileIDToRecycleName:
-    21300000: CeoWalkSpriteSheet_0
-    21300002: CeoWalkSpriteSheet_1
+    21300000: CEO_Idle_0
+    21300002: CEO_Idle_1
+    21300004: CEO_Idle_2
+    21300006: CEO_Idle_3
+    21300008: CEO_Idle_4
+    21300010: CEO_Idle_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -47,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 135
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,13 +101,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CeoWalkSpriteSheet_0
+      name: CEO_Idle_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 0
-        width: 395
-        height: 566
+        x: 20
+        y: 152
+        width: 84
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,19 +115,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c1fcd5b14bac3e469fb5f60457f0ea0
+      spriteID: a27e2946af8bef84dbc5addc3e4fc571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CeoWalkSpriteSheet_1
+      name: CEO_Idle_1
       rect:
         serializedVersion: 2
-        x: 509
-        y: 22
-        width: 368
-        height: 544
+        x: 144
+        y: 152
+        width: 84
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,7 +135,87 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d7bdf69169fc2d45b3cf4a807bdf5d3
+      spriteID: 1066da34addb6854bbb3243995f8600b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CEO_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 152
+        width: 84
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ad79f4774ffd943b520a963affb808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CEO_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 84
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f286370a0fd1442b7807ccdbd7ac8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CEO_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 84
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c556aa7dce175a4ea1a8e5d9eb89b04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CEO_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 84
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc3644bf5a085d41a2579be8ba4486e
       vertices: []
       indices: 
       edges: []
@@ -139,7 +223,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 55ddefa650c32fc4988229c6142b1de8
+    spriteID: eea0558b61fb76742b0d94a1b7fd0cd4
     vertices: []
     indices: 
     edges: []

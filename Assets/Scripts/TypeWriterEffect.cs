@@ -5,11 +5,18 @@ using UnityEngine.UI;
 
 public class TypeWriterEffect : MonoBehaviour
 {
+    [Header("Timing")]
     [SerializeField] private float m_typingDelay = 0.2f;
     [SerializeField] private float m_linesDelay = 0.4f;
+    [SerializeField] private int m_changeSpeakerLine = 4;
+    [Header("Content")]
     [SerializeField] private List<string> m_textLines = new List<string>();
     [SerializeField] private List<Sprite> m_speakers = new List<Sprite>();
-    [SerializeField] private int m_changeSpeakerLine = 4;
+    [Header("Sounds")]
+    [SerializeField] private AudioClip m_typingSound;
+    [SerializeField] private float m_typingVolume = 0.5f;
+    [SerializeField] private AudioClip m_changeSpeakersSound;
+    [SerializeField] private float m_changeSpeakersVolume = 0.5f;
 
     private string m_currentText = string.Empty;
     private Text m_textBox;
@@ -45,6 +52,7 @@ public class TypeWriterEffect : MonoBehaviour
         {
             if (m_currentLine == m_changeSpeakerLine)
             {
+                AudioSource.PlayClipAtPoint(m_changeSpeakersSound, Camera.main.transform.position, m_changeSpeakersVolume);
                 m_speakerIndex++;
             }
 
@@ -54,6 +62,11 @@ public class TypeWriterEffect : MonoBehaviour
             {
                 m_currentText = m_textLines[m_currentLine].Substring(0, m_textIndex);
                 m_textBox.text = m_currentText.ToUpper();
+
+                if (m_textIndex != m_textLines[m_currentLine].Length && m_textLines[m_currentLine][m_textIndex] != ' ')
+                {
+                    AudioSource.PlayClipAtPoint(m_typingSound, Camera.main.transform.position, m_typingVolume);
+                }
 
                 yield return new WaitForSeconds(m_typingDelay);
             }

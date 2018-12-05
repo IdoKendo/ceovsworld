@@ -265,8 +265,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 330799046}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 3, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalPosition: {x: 2, y: 4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -306,7 +306,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: cf13b23bcde1a7c48bda8371b3bbc42d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 40949fcb76b31e647b6300e180c8faff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -658,7 +658,7 @@ Prefab:
     - target: {fileID: 114216783311995038, guid: 9fd0989c074dd9a4eb74d90bbd63213c,
         type: 2}
       propertyPath: m_textLines.Array.data[1]
-      value: I'm so happy I finally have some time to play D&D. . .
+      value: I'm so happy I finally have some time to play DND. . .
       objectReference: {fileID: 0}
     - target: {fileID: 114216783311995038, guid: 9fd0989c074dd9a4eb74d90bbd63213c,
         type: 2}
@@ -683,7 +683,7 @@ Prefab:
     - target: {fileID: 114216783311995038, guid: 9fd0989c074dd9a4eb74d90bbd63213c,
         type: 2}
       propertyPath: m_textLines.Array.data[6]
-      value: Oh no, it's a 1. . .
+      value: Oh no, it's a critical failure. . .
       objectReference: {fileID: 0}
     - target: {fileID: 114216783311995038, guid: 9fd0989c074dd9a4eb74d90bbd63213c,
         type: 2}
@@ -702,6 +702,11 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: db3f202bdd9f3f943a78169886bb6398,
         type: 3}
+    - target: {fileID: 114216783311995038, guid: 9fd0989c074dd9a4eb74d90bbd63213c,
+        type: 2}
+      propertyPath: m_changeSpeakersSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 6a2d930b188615d4b931a8cc1fb0c1e4, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fd0989c074dd9a4eb74d90bbd63213c, type: 2}
   m_IsPrefabAsset: 0

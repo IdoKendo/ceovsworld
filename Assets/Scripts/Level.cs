@@ -7,13 +7,13 @@ public class Level : MonoBehaviour
 {
     [SerializeField] private float m_timeToWait = 3.5f;
 
-    private int currentSceneIdx;
+    private int m_currentSceneIdx;
 
     private void Start()
     {
-        currentSceneIdx = SceneManager.GetActiveScene().buildIndex;
+        m_currentSceneIdx = SceneManager.GetActiveScene().buildIndex;
 
-        if (currentSceneIdx == 0)
+        if (m_currentSceneIdx == 0)
         {
             StartCoroutine(WaitForTime());
         }
@@ -29,7 +29,7 @@ public class Level : MonoBehaviour
 
     public void LoadNextScene()
     {
-        SceneManager.LoadScene(currentSceneIdx + 1);
+        SceneManager.LoadScene(m_currentSceneIdx + 1);
     }
 
     public void QuitGame()
