@@ -12,6 +12,8 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private float m_typingVolume = 0.1f;
     [SerializeField] private Animator m_animator;
 
+    public bool Active { get; private set; }
+
     private Queue<string> m_sentences = new Queue<string>();
     private Dialogue m_dialogue;
 
@@ -25,6 +27,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue i_dialogue)
     {
+        Active = true;
         m_animator.SetBool("IsOpen", true);
         m_dialogue = i_dialogue;
         m_dialogue.Active = true;
@@ -76,6 +79,7 @@ public class DialogueManager : MonoBehaviour
 
     private void EndDialogue()
     {
+        Active = false;
         m_animator.SetBool("IsOpen", false);
     }
 }
